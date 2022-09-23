@@ -45,6 +45,8 @@ import { TabsPage } from './tabs.page';
     path: '',
     redirectTo: '/tabs/films',
     pathMatch: 'full'
+  }
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
