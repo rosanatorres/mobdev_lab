@@ -5,13 +5,18 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ApiService {
+  getPeople(id: string) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private http: HttpClient) { }
+
   getFilms(){
     return this.http.get('https://swapi.dev/api/films');
   }
 
   getFilm(id){
-    return this.http.get('https://swapi.dev/api/film/${id}');
+    return this.http.get(`https://swapi.dev/api/films/${id}`);
   }
+
 }
