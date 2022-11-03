@@ -39,7 +39,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule) 
+            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
           },
           {
             path: ':id',
