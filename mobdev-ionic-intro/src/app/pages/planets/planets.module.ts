@@ -17,4 +17,4 @@ import { PlanetsPage } from './planets.page';
   ],
   declarations: [PlanetsPage]
 })
-export class PlanetsPageModule {}
+export class PeoplePageModule {}

@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -31,7 +30,7 @@ const routes: Routes = [
           },
           {
             path: ':id',
-            loadChildren: () => import('../people-details/people-details-page.module').then( m => m.PeopleDetailsPagePageModule)
+            loadChildren: () => import('../person-details-page/person-details-page.module').then( m => m.PersonDetailsPagePageModule)
           }
         ]
       },
@@ -40,7 +39,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
+            loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule) 
           },
           {
             path: ':id',
