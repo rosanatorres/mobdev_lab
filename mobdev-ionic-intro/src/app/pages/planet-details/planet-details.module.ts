@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { PeopleDetailsPageRoutingModule } from './people-details-routing.module';
 
-import { PeopleDetailsPage } from './people-details.page';
+import { PeopleDetailsPage } from './planet-details.page';
 
 @NgModule({
   imports: [

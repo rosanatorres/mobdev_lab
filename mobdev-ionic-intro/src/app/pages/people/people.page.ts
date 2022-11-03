@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ApiService } from '../../services/api.service';
 
+
 @Component({
   selector: 'app-people',
   templateUrl: './people.page.html',
@@ -17,8 +18,10 @@ export class PeoplePage implements OnInit {
   ngOnInit() {
     this.people = this.api.getPeople();
   }
+
   openDetails(people){
     let split = people.url.split('/');
     let peopleId = split[split.length-2];
-    this.router.navigateByUrl(`/tabs/peoples/${peopleId}`);
+    this.router.navigateByUrl(`/tabs/people/${peopleId}`);
+  }
 }

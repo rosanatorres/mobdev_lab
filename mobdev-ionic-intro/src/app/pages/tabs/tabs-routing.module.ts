@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -27,6 +28,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () => import('../people/people.module').then( m => m.PeoplePageModule)
+          },
+          {
+            path: ':id',
+            loadChildren: () => import('../people-details/people-details-page.module').then( m => m.PeopleDetailsPagePageModule)
           }
         ]
       },
@@ -36,6 +41,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () => import('../planets/planets.module').then( m => m.PlanetsPageModule)
+          },
+          {
+            path: ':id',
+            loadChildren: () => import('../planet-details-page/planet-details-page.module').then( m => m.PlanetDetailsPagePageModule)
           }
         ]
       }

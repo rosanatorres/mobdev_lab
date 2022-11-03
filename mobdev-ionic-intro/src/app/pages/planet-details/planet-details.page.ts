@@ -15,7 +15,10 @@ export class PeopleDetailsPage implements OnInit {
 
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get('id');
-    this.api.getPeople(id).subscribe(res => {
+    this.api.getPeople(for (let index = 0; index < array.length; index++) {
+	const element = array[index];
+	id
+}).subscribe(res => {
       this.people = res;
     });
   }

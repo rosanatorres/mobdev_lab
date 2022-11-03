@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaulthref="/tabs/(people:people)">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ people?.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="star" slot="icon-only" color="secondary"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="star-outline" slot="icon-only" color="secondary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding="">
+
+	
+  <ion-card *ngIf="people" class="movie-card">
+    <ion-card-header>Episode {{ people.episode_id }}: {{ people.title }}</ion-card-header>
+    <ion-card-content>
+      {{ <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaulthref="/tabs/(people:people)">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ people?.title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="star" slot="icon-only" color="secondary"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="star-outline" slot="icon-only" color="secondary"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding="">
+
+	
+  <ion-card *ngIf="people" class="movie-card">
+    <ion-card-header>Episode {{ people.episode_id }}: {{ people.title }}</ion-card-header>
+    <ion-card-content>
+      {{ people.opening_crawl }}
+    </ion-card-content>
+ 
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="people" slot="start"></ion-icon>
+      Director: {{ people.director }}
+    </ion-item>
+ 
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="calendar" slot="start"></ion-icon>
+      Release Date: {{ people.release_date | date }}
+    </ion-item>
+  
+  </ion-card>
+
+</ion-content>.opening_crawl }}
+    </ion-card-content>
+ 
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="people" slot="start"></ion-icon>
+      Director: {{ people.director }}
+    </ion-item>
+ 
+    <ion-item class="movie-info" lines="none">
+      <ion-icon name="calendar" slot="start"></ion-icon>
+      Release Date: {{ people.release_date | date }}
+    </ion-item>
+  
+  </ion-card>
+
+</ion-content>
